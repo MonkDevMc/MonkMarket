@@ -1,0 +1,15 @@
+.vscode/
+target/
+ServTest/
+*.class
+*.jar
+*.war
+*.ear
+.vscode/
+target/
+*.tmp
+*.temp
+temp/
+pom.xml.versionsBackup
+dependency-reduced-pom.xml
+maven-ant-tasks.jar
