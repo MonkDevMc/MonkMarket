@@ -1,0 +1,12 @@
+.vscode/
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.tmp
+*.temp
+temp/
+pom.xml.versionsBackup
+dependency-reduced-pom.xml
+maven-ant-tasks.jar

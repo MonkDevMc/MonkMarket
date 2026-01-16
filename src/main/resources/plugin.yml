@@ -1,0 +1,22 @@
+name: MonkMarket
+version: 1.0.2.1
+main: io.monk.monkmarket.MonkMarket
+api-version: 1.16
+author: MonkDev
+description: by MonkDev t.me/M0nkAdapter.
+commands:
+  market:
+    description: Основная команда рынка
+    usage: /market [sell|search|my|admin]
+    aliases: [mm, рынок]
+permissions:
+  monkmarket.use:
+    description: Доступ к команде /market
+    default: true
+  monkmarket.admin:
+    description: Административные права рынка
+    default: op
+  monkmarket.bypass.limit:
+    description: Обход лимита на количество лотов
+    default: false
+# привет от монкдев, шарп лику и аки рэй

@@ -1,0 +1,53 @@
+# Сообщения MonkMarket
+
+# Общие сообщения
+no-permission: "&cУ вас нет прав на эту команду!"
+unknown-command: "&cНеизвестная команда. Используйте &e/market help"
+market-disabled: "&cМаркет временно не работает! Проверьте подключение к базе данных."
+
+# Сообщения продажи
+no-item-in-hand: "&cВозьмите предмет в руку для продажи!"
+invalid-price: "&cНеверная цена! Укажите число >0!"
+price-too-high: "&cЦена слишком высокая! Максимум: %max_price%"
+price-too-low: "&cЦена слишком низкая! Минимум: %min_price%"
+invalid-price-format: "&cНеверный формат цены!"
+invalid-amount: "&cНеверное количество! Укажите число >0."
+not-enough-items: "&cУ вас недостаточно предметов для продажи!"
+amount-too-high: "&cКоличество слишком большое! Максимум: %max_amount%"
+invalid-amount-format: "&cНеверный формат количества!"
+item-blacklisted: "&cЭтот предмет нельзя продавать!"
+item-limit-reached: "&cВы достигли лимита слотов продажи! Максимум: %limit%"
+invalid-item: "&cЭтот предмет нельзя продавать!"
+item-listed: "&aПредмет выставлен на продажу за &e%price% монет (количество: %amount%)"
+listing-failed: "&cНе удалось выставить предмет на продажу!"
+
+# Сообщения покупки
+item-not-found: "&cПредмет не найден!"
+item-already-sold: "&cЭтот предмет уже продан!"
+not-enough-stock: "&cНедостаточно товара в наличии!"
+not-enough-money: "&cНедостаточно денег!"
+no-inventory-space: "&cНедостаточно места в инвентаре для покупки!"
+cannot-buy-own-item: "&cНельзя купить свой же предмет!"
+purchase-success: "&aПокупка успешна! Предмет добавлен в инвентарь."
+purchase-failed: "&cНе удалось завершить покупку!"
+
+# Сообщения поиска
+search-results: "&fРезультаты поиска по запросу: &e%query%"
+
+# Сообщения моих лотов
+my-items-empty: "&fУ вас нет активных слотов продажи!"
+item-removed: "&aВыбранный Слот снят с продажи!"
+items-returned: "&aВам возвращено %amount% предметов"
+
+# Уведомления о продажах
+sale-notification: "&aВаш предмет &e%item% &aв количестве &e%amount% &aпродан за &6%price%"
+money-received: "&aВы получили &6%amount% &aза проданные товары"
+
+# Админ сообщения
+config-reloaded: "&aКонфигурация перезагружена!"
+cache-cleared: "&aКэш очищен!"
+stats-header: "&6Статистика рынка:"
+stats-total-items: "&7Всего товаров: &f%total%"
+stats-active-items: "&7Активных слотов продажи: &a%active%"
+stats-sold-today: "&7Продано сегодня: &e%sold%"
+stats-total-turnover: "&7Общий оборот: &6%turnover%"

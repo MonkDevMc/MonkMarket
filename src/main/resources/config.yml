@@ -1,0 +1,100 @@
+# MonkMarket Конфигурация
+
+#Не буду ничего обьяснять, тут всё элементарно. 
+#по всем вопросам > @AttackManager
+
+# Настройки сервера
+server-id: "server1" # Название для каждого сервера! 
+# КАЖДОМУ СЕРВЕРУ В КОНФИГЕ НУЖНО ОБЪЯЗАТЕЛЬНО СТАВИТЬ СВОЁ НАЗВАНИЕ!
+# А ТАКЖЕ ПОДКЛЮЧАТЬ К ОБЩЕЙ ДБ!!!
+items-per-page: 36
+max-items-per-player: 45
+# Настройки уведомлений
+notifications:
+  purchase-enabled: true
+  purchase-message: "&aВы купили &e%amount%x %item% &aза &6%total_price% &aу &e%seller%"
+  pay-minute-market:
+    enabled: true
+    message-enabled: true
+    message: "&7[&6Маркет&7] &fЧерез &e5 &fсекунд будут выданы деньги за проданные товары"
+    delay-seconds: 5
+  sounds:
+    purchase:
+      enabled: true
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1.0
+      pitch: 1.0
+    sell:
+      enabled: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+      volume: 1.0
+      pitch: 1.0
+    open:
+      enabled: true
+      sound: "UI_BUTTON_CLICK"
+      volume: 0.5
+      pitch: 1.0
+# Настройки GUI
+gui:
+  main-menu:
+    title: "&8Рынок - Страница %page%"
+    size: 54
+    refresh-button: # Кнопка перезагрузки разделов (вот такого у рв ТОЧНО НЕТУ!)
+      enabled: true
+      slot: 48
+  custom-background:
+    enabled: false
+    resourcepack-texture: ""
+# Настройки предметов
+items:
+  custom-items-support: true #можно ли продавать не типичные вещи (Дон.Предметы и тд)
+  validation:
+    check-nbt: true #Почти тоже что и custom-items-support, только проверяет не испорчен ли нбт предмета
+    check-custom-items: true #Почти тоже что и custom-items-support 
+    blacklist: # что незя продавать на маркете
+      - "BARRIER"
+      - "COMMAND_BLOCK"
+      - "STRUCTURE_VOID"
+      - "BEDROCK"
+
+# Настройки базы данных
+database:
+  type: "SQLITE"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "monkmarket"
+    username: "root"
+    password: ""
+    use-ssl: false
+  sqlite:
+    filename: "market.db"
+  h2:
+    filename: "market"
+# Настройки экономики
+economy:
+  currency: "points" #просто имя, не влияет на плагин! :3
+  min-price: 1.0
+  max-price: 1000000.0
+  transactions:
+    log-to-console: true
+    log-to-file: true
+    log-format: "[%time%] %player% купил %amount%x %item% у %seller% за %price%"
+  item-delivery:
+    check-inventory-space: true
+    stack-items: true
+    cancel-if-no-space: true
+    no-space-message: "&cНедостаточно места в инвентаре для покупки!"
+# Настройки сортировки
+sorting:
+  alphabetically: true #По алфавиту? 
+  case-sensitive: false
+  search:
+    use-tab-completion: true # Юзать Таб комплит ?
+    search-by-display-name: true # Искать по названию?
+# Настройки безопасности
+security:
+  anti-spam:
+    enabled: true
+    commands-delay: 1000
+    max-commands-per-minute: 30

@@ -1,0 +1,36 @@
+# Звуки MonkMarket
+
+purchase:
+  sound: "ENTITY_PLAYER_LEVELUP"
+  volume: 1.0
+  pitch: 1.0
+
+sell:
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  volume: 1.0
+  pitch: 1.0
+
+click:
+  sound: "UI_BUTTON_CLICK"
+  volume: 0.5
+  pitch: 1.0
+
+open:
+  sound: "BLOCK_CHEST_OPEN"
+  volume: 0.7
+  pitch: 1.0
+
+close:
+  sound: "BLOCK_CHEST_CLOSE"
+  volume: 0.7
+  pitch: 1.0
+
+error:
+  sound: "ENTITY_VILLAGER_NO"
+  volume: 0.8
+  pitch: 1.0
+
+success:
+  sound: "ENTITY_PLAYER_LEVELUP"
+  volume: 1.0
+  pitch: 1.5
